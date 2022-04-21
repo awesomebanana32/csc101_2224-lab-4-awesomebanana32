@@ -7,6 +7,14 @@ import typing
 class TestCases(unittest.TestCase):
 
     # input: self
+    # result: assert  all positive numbers
+    def test_are_positive(self):
+        listpositive = [1,3,2]
+        list6 = filter.are_positive(listpositive)
+        print(list6)
+        self.assertEqual(list6, [1,3,2])
+
+    # input: self
     # result: assert all positive numbers
     def test_are_positive_again(self):
         listpositive = [100,3,-2]

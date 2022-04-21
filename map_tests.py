@@ -56,14 +56,6 @@ class TestCases(unittest.TestCase):
         print(list5)
         self.assertEqual(list5, [5, 10, 17])
 
-    # input: self
-    # result: assert  all positive numbers
-    def test_are_positive(self):
-        listpositive = [1,3,2]
-        list6 = map.are_positive(listpositive)
-        print(list6)
-        self.assertEqual(list6, [1,3,2])
-
 # Run the unit tests.
 if __name__ == '__main__':
     unittest.main()
