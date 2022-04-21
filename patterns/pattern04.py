@@ -19,9 +19,11 @@ SSSSSSSSSS
 # input: column as int
 # result: single character as str
 def compute_letter(row: int, column: int) -> str:
-    # complete this function
-    return 'X'
-
+    if (row > 1 and row < 5 and column > 2 and column < 7):
+        return 'M'
+    else:
+        # complete this function
+        return 'S'
 
 if __name__ == '__main__':
     driver.compare_patterns(string_pattern, compute_letter)

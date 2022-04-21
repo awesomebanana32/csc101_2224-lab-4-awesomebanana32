@@ -22,10 +22,19 @@ TTTTTTTTTTTTTTTTTTTT
 # input: column as int
 # result: single character as str
 def compute_letter(row: int, column: int) -> str:
-    # complete this function
-    # ** tip ** Think of this as rectangles overlapping (such as cloth stacked)
-    # and work from the "top" to the "bottom"
-    return 'X'
+
+    if (row >= 2  and row <= 3 and column >= 4 and column <= 9):
+        return 'Z'
+    elif (row >= 4 and row <= 5 and column >= 4 and column <= 6):
+        return 'Z'
+    elif (row >= 4 and row <= 5 and column >= 7 and column <= 9):
+        return 'X'
+    elif (row >= 4 and row <= 5 and column >= 10 and column <= 12):
+        return 'B'
+    elif (row == 6 and column >= 7 and column <= 12):
+        return 'B'
+    else:
+        return 'T'
 
 
 if __name__ == '__main__':
