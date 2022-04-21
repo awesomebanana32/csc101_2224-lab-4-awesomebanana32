@@ -33,8 +33,11 @@ QQQQQQQQQQQQQQQQQQQQ
 # input: column as int
 # result: single character as str
 def compute_letter(row: int, column: int) -> str:
+    if (row < 10):
+        return 'R'
+    else:
     # complete this function
-    return 'X'
+        return 'Q'
 
 
 if __name__ == '__main__':

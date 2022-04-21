@@ -33,7 +33,12 @@ TTTTTTTTTTTTTTTTTTTW
 # result: single character as str
 def compute_letter(row: int, column: int) -> str:
     # complete this function
-    return 'X'
+    if (row <= column):
+        return 'W'
+    else:
+        # complete this function
+        return 'T'
+
 
 
 if __name__ == '__main__':

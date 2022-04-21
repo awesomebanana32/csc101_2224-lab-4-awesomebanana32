@@ -32,8 +32,11 @@ XXXXXXXXXXOOOOOOOOOOOO
 # input: column as int
 # result: single character as str
 def compute_letter(row: int, column: int) -> str:
+    if (column < 10):
+        return 'X'
+    else:
     # complete this function
-    return 'X'
+        return 'O'
 
 
 if __name__ == '__main__':
